@@ -271,11 +271,16 @@ nav#category a {
 	
 }
 
+nav#category a svg {
+	display: block;
+	width: 100%;
+	height: 90px;
+}
+
 nav#category a span {
 	display: block;
 	padding-top:5px;
 	padding-bottom: 5px;
-	margin-top: 60px;
 	font-size: 1em;
 	font-family: 'Open Sans Hebrew Condensed', sans-serif;
 	background-color:#ecf0f1; 
