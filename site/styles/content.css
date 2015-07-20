@@ -1,0 +1,12 @@
+/**
+ * Main Style Sheet
+ * Gaming shop
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ h1,h2,h3,h4,h5,h6,p {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
