@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/section.dtd">
 <document>
+	
 	<section name="home">
 		<language name="all" file="home.xml" />
 	</section>
+
+	<section name="about">
+		<language name="all" file="about.xml" />
+	</section>
+
+	<section name="legal">
+		<language name="all" file="legal.xml" />
+	</section>
+
+	<section name="service">
+		<language name="all" file="service.xml" />
+	</section>
+
+	<section name="faq">
+		<language name="all" file="faq.xml" />
+	</section>
+
+	<section name="information">
+		<language name="all" file="information.xml" />
+	</section>							
+
 </document>
