@@ -140,7 +140,7 @@
 					<svg>
 							<use
 								href="#icon-gamepad"
-								xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-cart"
+								xlink:href="svgdefs.svg/#icon-cart"
 								/>	
 					</svg>
 					
