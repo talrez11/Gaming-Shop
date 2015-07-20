@@ -9,13 +9,9 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<header>
-				
-			</header>
+			
+			<cms:template file="parts/header.xml"/>
 
-			<footer>
-				<cms:template file="stock/copyright.xml"/>
-			</footer>	
 		</body>
 	</html>
 </document>
