@@ -1,0 +1,5 @@
+<document>
+	<div class="$params['text_id']" cms:eval="class">
+		<cms:markdown param="content" multilanguage="yes"/>
+	</div>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<header>
+		<!-- Top Header -->
+		<div class="top_header">
+			<a
+				class="logo"
+				href="url_Make('', 'home')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+			</a>
+
+		<cms:module
+				name="articles"
+				action="show"
+				text_id="shop_details"
+				template="parts/article_no_heading.xml"
+				/>	
+		</div>
+
+		<!-- searchBar -->
+
+		<div class="searchBar">
+
+			<form action="">
+				<label>
+					<input type="search" name="query" placeholder="חיפוש"/>
+				</label>
+			</form>
+
+			<nav>
+				<a
+					class=" == 'about' ? 'active' : false"
+					href="url_Make('', 'about')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<cms:text constant="menu_about"/>
+				</a>
+
+				<a
+					class=" == 'legal' ? 'active' : false"
+					href="url_Make('', 'legal')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<cms:text constant="menu_legal"/>
+				</a>
+
+				<a
+					class=" == 'service' ? 'active' : false"
+					href="url_Make('', 'service')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<cms:text constant="menu_service"/>
+				</a>
+
+				<a
+					class=" == 'faq' ? 'active' : false"
+					href="url_Make('', 'faq')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<cms:text constant="menu_faq"/>
+				</a>
+
+				<a
+					class=" == 'information' ? 'active' : false"
+					href="url_Make('', 'information')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<cms:text constant="menu_information"/>
+				</a>
+
+			</nav>
+
+			<div id="popup">
+				<span><cms:text constant="cart"/></span>
+				<p class="items"><cms:text constant="items"/></p>
+				<p class="price"><cms:text constant="price"/></p>
+			</div>
+
+		</div>
+
+		<!-- Shop Category Menu -->
+		<nav id="category">
+			<cms:module
+				name="shop"
+				action="show_category_list"
+				template="parts/category_names.xml"
+				/>
+		</nav>
+
+	</header>
+</document>

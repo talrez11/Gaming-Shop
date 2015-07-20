@@ -1,0 +1,9 @@
+<document>
+	<a
+		href="javascript:void(0)"
+		data_id="$params['id']"
+		cms:eval="data_id"
+		>
+		<span><cms:var param="title" multilanguage="yes"/></span>
+	</a>
+</document>
