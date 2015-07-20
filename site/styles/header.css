@@ -1,0 +1,222 @@
+/**
+ * Main Style Sheet
+ * Gaming Shop
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+ 	display:block;
+}
+
+div.top_header {
+ 	display: block;
+ 	padding:10px calc((100vw - 1200px) / 2);
+ 	background-color:#262223;
+}
+
+a.logo {
+ 	display:inline-block;
+ 	vertical-align: middle;
+ 	padding-right: 10px;
+ 	background-image: url(../images/logo-vector.svg);
+ 	background-repeat: no-repeat;
+ 	background-position: right center;
+ 	background-size: 300px 50px;
+ 	width:calc(50% - 10px);
+ 	height: 50px;
+}
+
+div.shop_details {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	padding-left: 10px;
+ 	text-align: left;
+ 	width:calc(50% - 10px);
+}
+
+div.shop_details p {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 40px;
+}
+
+div.shop_details p:first-of-type {
+	background-image: url(../images/icomoon_22_icons/SVG/location.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.shop_details p:nth-of-type(2) {
+	background-image: url(../images/icomoon_22_icons/SVG/time.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.shop_details p:last-of-type {
+	background-image: url(../images/icomoon_22_icons/SVG/phone.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.searchBar {
+	display: block;
+	padding:10px calc((100vw - 1200px) / 2);
+ 	border-bottom: 1px solid #e74c3c;	
+}
+
+form {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+}
+
+form label {
+	display: block;
+}
+
+form label input {
+	display: block;
+	padding: 12px 0px;
+	border: 1px solid #bdc3c7;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	width: 100%;
+
+}
+
+::-webkit-input-placeholder {
+	font-family: 'open Sans Hebrew' serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-family: 'open Sans Hebrew' serif;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-family: 'open Sans Hebrew' serif;
+}
+
+:-ms-input-placeholder {  
+	font-family: 'open Sans Hebrew' serif;
+}
+
+div.searchBar nav {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 60%;
+}
+
+div.searchBar nav a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+	color:#7f8c8d;
+	text-decoration:none;
+	padding-right: 40px;
+}
+
+div.searchBar nav a:first-of-type {
+	background-image: url(../images/icomoon_22_icons/SVG/gamepad.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.searchBar nav a:nth-of-type(2) {
+	background-image: url(../images/icomoon_22_icons/SVG/joystick.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.searchBar nav a:nth-of-type(3) {
+	background-image: url(../images/icomoon_22_icons/SVG/service.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.searchBar nav a:nth-of-type(4) {
+	background-image: url(../images/icomoon_22_icons/SVG/faq.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div.searchBar nav a:nth-of-type(5) {
+	background-image: url(../images/icomoon_22_icons/SVG/info.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+
+div#popup {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 10%;
+	height: 50px;
+}
+
+div#popup span {
+	display: block;
+	color:#7f8c8d;
+	padding-right: 10px;
+	background-image: url(../images/icomoon_22_icons/SVG/cart.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40px 40px;
+}
+
+div#popup p:first-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	color:#7f8c8d;
+	width: 50%;
+}
+
+div#popup p:last-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	color:#7f8c8d;
+	width: 50%;
+}
+
+/*category Navigation*/
+
+nav#category {
+	display: block;
+	text-align: center;
+	padding:10px calc((100vw - 1200px) / 2);
+}
+
+nav#category a {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+	text-decoration:none;
+	color:#7f8c8d;
+	width: 90px;
+	border:1px solid #ecf0f1;
+	
+}
+
+nav#category a span {
+	display: block;
+	padding-top:5px;
+	padding-bottom: 5px;
+	margin-top: 60px;
+	font-size: 1em;
+	font-family: 'Open Sans Hebrew Condensed', sans-serif;
+	background-color:#ecf0f1; 
+}
