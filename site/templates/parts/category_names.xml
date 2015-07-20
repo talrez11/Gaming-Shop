@@ -1,9 +1,12 @@
 <document>
-	<a
-		href="javascript:void(0)"
-		data_id="$params['id']"
-		cms:eval="data_id"
-		>
+	<a href="#">
+		<svg>
+			<use 
+				href="'#'.$params['text_id']" 
+				xlink:href="'#'.$params['text_id']" 
+				cms:eval="href,xlink:href"
+			/>	
+		</svg>
 		<span><cms:var param="title" multilanguage="yes"/></span>
 	</a>
 </document>
