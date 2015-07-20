@@ -1,4 +1,12 @@
 {
     "site_title": "Gaming Shop",
-    "copyright_text":"All Right reserved"
+    "copyright_text":"All Right reserved",
+    "menu_about":"אודותינו",
+    "menu_legal":"תקנון",
+    "menu_service":"שרות לקוחות",
+    "menu_faq":"שאלות נפוצות",
+    "menu_information":"מידע מקצועי",
+    "cart":"סל קניות",
+    "items":"פריטים",
+    "price":"שח"
 }
