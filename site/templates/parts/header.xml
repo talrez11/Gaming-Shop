@@ -12,23 +12,50 @@
 				>
 			</a>
 
-		<cms:module
-				name="articles"
-				action="show"
-				text_id="shop_details"
-				template="parts/article_no_heading.xml"
-				/>	
+			<address>
+
+				<span>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-location"
+							/>
+					</svg>
+					<cms:text constant="address"/>
+
+				</span>
+
+				<span>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-time"
+							/>
+					</svg>
+					<cms:text constant="hours"/>
+				</span>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-phone"
+							/>
+					</svg>
+					<cms:text constant="phone"/>
+				</a>
+			</address>
 		</div>
 
 		<!-- searchBar -->
 
 		<div class="searchBar">
 
-			<form action="">
-				<label>
-					<input type="search" name="query" placeholder="חיפוש"/>
-				</label>
-			</form>
+			<cms:template file="parts/search_bar.xml"/>
 
 			<nav>
 				<a
@@ -37,6 +64,12 @@
 					cms:eval="href"
 					cms:optional="class"
 					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-gamepad"
+							/>
+					</svg>
 					<cms:text constant="menu_about"/>
 				</a>
 
@@ -46,6 +79,12 @@
 					cms:eval="href"
 					cms:optional="class"
 					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-joystick"
+							/>
+					</svg>
 					<cms:text constant="menu_legal"/>
 				</a>
 
@@ -55,6 +94,12 @@
 					cms:eval="href"
 					cms:optional="class"
 					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-service"
+							/>
+					</svg>
 					<cms:text constant="menu_service"/>
 				</a>
 
@@ -64,6 +109,12 @@
 					cms:eval="href"
 					cms:optional="class"
 					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-faq"
+							/>
+					</svg>
 					<cms:text constant="menu_faq"/>
 				</a>
 
@@ -73,13 +124,31 @@
 					cms:eval="href"
 					cms:optional="class"
 					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-info"
+							/>
+					</svg>
 					<cms:text constant="menu_information"/>
 				</a>
 
 			</nav>
 
 			<div id="popup">
-				<span><cms:text constant="cart"/></span>
+				<div class="wrap">
+					<svg>
+							<use
+								href="#icon-gamepad"
+								xlink:href="site/images/icomoon_22_icons/svgdefs.svg#icon-cart"
+								/>	
+					</svg>
+					
+					<span>
+						<cms:text constant="cart"/>
+					</span>
+
+				</div>
 				<p class="items"><cms:text constant="items"/></p>
 				<p class="price"><cms:text constant="price"/></p>
 			</div>
