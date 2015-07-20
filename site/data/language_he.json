@@ -8,5 +8,9 @@
     "menu_information":"מידע מקצועי",
     "cart":"סל קניות",
     "items":"פריטים",
-    "price":"שח"
+    "price":"שח",
+    "address":"התעשייה 21 רעננה",
+    "hours":" א-ה 10:00 - 19:00 • ו 0900 - 14:00  ",
+    "phone":"03-9190808",
+    "placeholder_search":"חיפוש"
 }
