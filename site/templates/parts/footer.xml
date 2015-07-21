@@ -40,7 +40,7 @@
 				</a>
 			</address>
 
-			<nav>
+			<nav id="menu">
 				<a
 					class=" == 'about' ? 'active' : false"
 					href="url_Make('', 'about')"
