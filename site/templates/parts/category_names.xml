@@ -1,12 +1,14 @@
 <document>
-	<a href="#" class="$params['text_id']" cms:eval="class">
-		<svg>
+	<a href="#" class="$params['text_id']" cms:eval="class" >
+		<svg class="'icon-'.$params['text_id']" cms:eval="class" >
 			<use 
-				href="'#'.$params['text_id']" 
-				xlink:href="'#'.$params['text_id']" 
+				href="'#icon-'.$params['text_id']" 
+				xlink:href="'#icon-'.$params['text_id']" 
 				cms:eval="href,xlink:href"
 			/>	
 		</svg>
-		<span><cms:var param="description" multilanguage="yes"/></span>
+		<cms:var param="description" multilanguage="yes"/>
+	
 	</a>
+	<!-- class="$params['text_id']" cms:eval="class" -->
 </document>
