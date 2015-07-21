@@ -12,6 +12,10 @@
 			<cms:svg file="../images/site-sprite.svg"/>
 			<cms:template file="parts/header.xml"/>
 
+
+			
+			<cms:template file="parts/footer.xml"/>
+
 		</body>
 	</html>
 </document>
