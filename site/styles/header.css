@@ -262,41 +262,37 @@ nav#category {
 nav#category a {
 	display: inline-block;
 	vertical-align: top;
+	padding-bottom: 5px;
 	margin-left: 2px;
 	margin-right: 2px;
 	text-align: center;
 	text-decoration:none;
+	color:#7f8c8d;
+	background-color: #ecf0f1;
+	font-family: 'Open Sans Hebrew Condensed', sans-serif;	
 	width: 90px;
 	border:1px solid #ecf0f1;
 	transition:all 0.3s;	
 }
 
-nav#category a:hover  {
-	background-color: currentColor;
-}
 
 nav#category a svg {
 	display: block;
+	margin-bottom: 5px;
 	width: 100%;
 	height: 90px;
+	background-color: white;
+	transition:all 0.3s;
 }
 
 nav#category a svg use {
 	fill:#7f8c8d;
-	transition:all 0.3;
+	transition:all 0.3s;
 }
 
 nav#category a:hover svg use {
 	fill:white;
 }
 
-nav#category a span {
-	display: block;
-	padding-top:5px;
-	padding-bottom: 5px;
-	font-size: 1em;
-	font-family: 'Open Sans Hebrew Condensed', sans-serif;
-	background-color:#ecf0f1; 
-	transition:all 0.3s;
-}
+
 
