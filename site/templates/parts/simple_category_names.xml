@@ -1,0 +1,6 @@
+<document>
+	<a href="#">
+
+		<cms:var param="description" multilanguage="yes"/>
+	</a>
+</document>
