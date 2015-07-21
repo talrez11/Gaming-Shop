@@ -20,7 +20,7 @@
 			<svg>
 				<use
 					href="#icon-gamepad"
-					xlink:href="site/images/svgdefs.svg#icon-search"
+					xlink:href="site/images/site-sprite.svg#icon-search"
 					/>
 			</svg>
 		</button>

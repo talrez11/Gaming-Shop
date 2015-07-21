@@ -9,7 +9,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<cms:svg file="../images/svgdefs.svg"/>
+			<cms:svg file="../images/site-sprite.svg"/>
 			<cms:template file="parts/header.xml"/>
 
 		</body>

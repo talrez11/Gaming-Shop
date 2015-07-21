@@ -1,5 +1,5 @@
 <document>
-	<a href="#">
+	<a href="#" class="$params['text_id']" cms:eval="class">
 		<svg>
 			<use 
 				href="'#'.$params['text_id']" 
@@ -7,6 +7,6 @@
 				cms:eval="href,xlink:href"
 			/>	
 		</svg>
-		<span><cms:var param="title" multilanguage="yes"/></span>
+		<span><cms:var param="description" multilanguage="yes"/></span>
 	</a>
 </document>

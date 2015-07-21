@@ -18,7 +18,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-location"
+							xlink:href="site/images/site-sprite.svg#icon-location"
 							/>
 					</svg>
 					<cms:text constant="address"/>
@@ -29,7 +29,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-time"
+							xlink:href="site/images/site-sprite.svg#icon-time"
 							/>
 					</svg>
 					<cms:text constant="hours"/>
@@ -43,7 +43,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-phone"
+							xlink:href="site/images/site-sprite.svg#icon-phone"
 							/>
 					</svg>
 					<cms:text constant="phone"/>
@@ -67,7 +67,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-gamepad"
 							/>
 					</svg>
 					<cms:text constant="menu_about"/>
@@ -82,7 +82,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-joystick"
+							xlink:href="site/images/site-sprite.svg#icon-joystick"
 							/>
 					</svg>
 					<cms:text constant="menu_legal"/>
@@ -97,7 +97,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-service"
+							xlink:href="site/images/site-sprite.svg#icon-service"
 							/>
 					</svg>
 					<cms:text constant="menu_service"/>
@@ -112,7 +112,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-faq"
+							xlink:href="site/images/site-sprite.svg#icon-faq"
 							/>
 					</svg>
 					<cms:text constant="menu_faq"/>
@@ -127,7 +127,7 @@
 					<svg>
 						<use
 							href="#icon-gamepad"
-							xlink:href="site/images/svgdefs.svg#icon-info"
+							xlink:href="site/images/site-sprite.svg#icon-info"
 							/>
 					</svg>
 					<cms:text constant="menu_information"/>
@@ -140,7 +140,7 @@
 					<svg>
 							<use
 								href="#icon-gamepad"
-								xlink:href="site/images/svgdefs.svg#icon-cart"
+								xlink:href="site/images/site-sprite.svg#icon-cart"
 								/>	
 					</svg>
 					
