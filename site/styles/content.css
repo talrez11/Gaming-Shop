@@ -6,7 +6,37 @@
  * Authors:Tal Reznic
  */
 
- h1,h2,h3,h4,h5,h6,p {
- 	margin: 0px;
- 	padding: 0px;
- }
+/*RESET*/
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.icon-games,.icon-mouse {
+	color:#9b59b6;
+}
+
+.icon-ps3,.icon-ps4 {
+	color:#3498db;
+}
+
+.icon-xbox360,.icon-xboxone {
+	color:#2ecc71;
+}
+
+.icon-apple {
+	color:#95a5a6;
+}
+
+.icon-hot {
+	color:#e74c3c;
+}
+
+.icon-chip {
+	color:#f1c40f;
+}
+
+.icon-date,.icon-headphones,.icon-memory {
+	color:#34495e;
+}
