@@ -1,1 +1,91 @@
-@import 'stock/copyright.css';
+/**
+ * Footer Style Sheet
+ * Gamin shop
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+footer {
+	display: block;
+	text-align: center;
+	padding-top: 50px;
+	background-color:#262223; 
+}
+
+footer address {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 120px;
+	background-image: url(../images/logo-vector.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 650px 110px;
+	width: 800px;
+}
+
+footer nav {
+	display: block;
+	border-bottom: 1px solid #e74c3c; 
+}
+
+footer nav a {
+	display: inline-block;
+	vertical-align: middle;
+	color:white;
+	text-decoration: none;
+	transition:all 0.3s;
+}
+
+footer nav a:hover {
+	color:#e74c3c;
+}
+
+footer nav a svg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+}
+
+footer nav a svg use {
+	fill:white;
+	transition:all 0.3s;
+}
+
+footer nav a:hover  svg use {
+	fill:#e74c3c;
+}
+
+footer nav#category {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: none;
+}
+
+footer nav#category a {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Open Sans Hebrew Condensed', sans-serif;
+	border:none;
+}
+
+footer nav#category a:hover {
+	background-color:transparent;
+	text-decoration: underline;
+}
+
+footer div.payments {
+	display: block;
+	padding:40px calc((100vw - 1200px) / 2);
+	background-color:#bdc3c7;
+	background-image: url(../images/payment-icons.svg); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 500px 50px;
+}
