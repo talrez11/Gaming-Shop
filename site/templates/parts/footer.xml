@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<footer>
+			<address>
+
+				<span>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-location"
+							/>
+					</svg>
+					<cms:text constant="address"/>
+
+				</span>
+
+				<span>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-time"
+							/>
+					</svg>
+					<cms:text constant="hours"/>
+				</span>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-phone"
+							/>
+					</svg>
+					<cms:text constant="phone"/>
+				</a>
+			</address>
+
+			<nav>
+				<a
+					class=" == 'about' ? 'active' : false"
+					href="url_Make('', 'about')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-gamepad"
+							/>
+					</svg>
+					<cms:text constant="menu_about"/>
+				</a>
+
+				<a
+					class=" == 'legal' ? 'active' : false"
+					href="url_Make('', 'legal')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-joystick"
+							/>
+					</svg>
+					<cms:text constant="menu_legal"/>
+				</a>
+
+				<a
+					class=" == 'service' ? 'active' : false"
+					href="url_Make('', 'service')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-service"
+							/>
+					</svg>
+					<cms:text constant="menu_service"/>
+				</a>
+
+				<a
+					class=" == 'faq' ? 'active' : false"
+					href="url_Make('', 'faq')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-faq"
+							/>
+					</svg>
+					<cms:text constant="menu_faq"/>
+				</a>
+
+				<a
+					class=" == 'information' ? 'active' : false"
+					href="url_Make('', 'information')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+					<svg>
+						<use
+							href="#icon-gamepad"
+							xlink:href="site/images/site-sprite.svg#icon-info"
+							/>
+					</svg>
+					<cms:text constant="menu_information"/>
+				</a>
+
+			</nav>
+
+					<!-- Shop Category Menu -->
+			<nav id="category">
+				<cms:module
+					name="shop"
+					action="show_category_list"
+					template="parts/simple_category_names.xml"
+					/>
+			</nav>
+
+			<div class="payments">
+				
+			</div>
+
+
+	</footer>
+</document>
