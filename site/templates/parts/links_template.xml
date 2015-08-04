@@ -1,0 +1,3 @@
+<document>
+	<h2><cms:var param="text" /></h2>
+</document>
