@@ -3,8 +3,3 @@
 			<cms:var param="text"/>
 		</a>
 </document>
-
-
-<!-- 	<div class="image_container">
-		<img src="$params['image']" alt="" cms:eval="src"/>
-	</div> -->
