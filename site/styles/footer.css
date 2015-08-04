@@ -82,6 +82,7 @@ footer nav#category a {
 	color:white;
 	font-family: 'Open Sans Hebrew Condensed', sans-serif;
 	border:none;
+    background-color: inherit;
 }
 
 footer nav#category a:hover {
