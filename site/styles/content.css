@@ -78,3 +78,54 @@ nav#category a:hover svg.icon-chip {
 nav#category a:hover svg.icon-date,nav#category a:hover svg.icon-headphones,nav#category a:hover svg.icon-memory {
 	background-color:#34495e;
 }
+
+
+/*Home page*/
+
+section.adds {
+	display: block;
+	text-align: right;
+	padding:0px calc((100vw - 1200px) / 2);
+}
+
+div.container {
+	display: table;
+	padding-bottom: 10px;
+	width: 1200px;
+}
+
+div.btn_controls {
+	display:table-cell;
+	vertical-align: middle;
+
+}
+
+div.btn_controls a {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    vertical-align: baseline;
+    color: #bdc3c7;
+    text-decoration: none;
+    border: 1px solid #bdc3c7;
+}
+
+div.link_images_container {
+	display:table-cell;
+	vertical-align: middle;
+	width: 900px;
+	height: 300px;
+	position: relative;
+}
+
+div.link_images_container a {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
