@@ -49,6 +49,10 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+	advertise = new PageControl('div.link_images_container','a')
+	advertise.attachControls($('div.btn_controls a'))
+	.setInterval(6000)
+	.setWrapAround(true);
 };
 
 
