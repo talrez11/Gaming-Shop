@@ -11,7 +11,13 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:svg file="../images/site-sprite.svg"/>
 			<cms:template file="parts/header.xml"/>
-
+			<section class="adds">
+				<cms:module
+					name="links"
+					action="show_link_list"
+					template="parts/links_template.xml"
+					/>
+			</section>
 
 			
 			<cms:template file="parts/footer.xml"/>
