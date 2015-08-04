@@ -34,6 +34,15 @@
 
 			</section>
 
+			<section class="hot_sales">
+				<cms:module
+					name="shop"
+					action="show_category"
+					text_id="hot"
+					template="parts/show_category.xml"
+					/>				
+			</section>
+
 			<cms:template file="parts/footer.xml"/>
 
 		</body>
