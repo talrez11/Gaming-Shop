@@ -1,3 +1,10 @@
 <document>
-	<h2><cms:var param="text" /></h2>
+		<a href="javascript:void(0)">
+			<cms:var param="text"/>
+		</a>
 </document>
+
+
+<!-- 	<div class="image_container">
+		<img src="$params['image']" alt="" cms:eval="src"/>
+	</div> -->
