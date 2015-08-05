@@ -13,6 +13,8 @@ h1,h2,h3,h4,h5,h6,p {
 	padding: 0px;
 }
 
+
+
 nav#category a.games:hover,nav#category a.mouse:hover {
 	background-color:#8e44ad;
 	color:white;
@@ -41,7 +43,6 @@ nav#category a.hot:hover {
 nav#category a.chip:hover {
 	background-color:#f39c12;
 	color:white;	
-
 }
 
 nav#category a.date:hover,nav#category a.headphones:hover,nav#category a.memory:hover {
@@ -49,11 +50,9 @@ nav#category a.date:hover,nav#category a.headphones:hover,nav#category a.memory:
 	color:white;	
 }
 
-
 nav#category a:hover svg,nav#category a:hover svg.icon-mouse {
 	background-color:#9b59b6;
 }
-
 
 nav#category a:hover svg.icon-ps3,nav#category a:hover svg.icon-ps4 {
 	background-color:#3498db;
@@ -179,20 +178,17 @@ section.hot_sales a {
     vertical-align: top;
     text-align: center;
     margin-bottom: 10px;
-    width:25%;
+    border:2px solid white;
+    width:calc(25% - 4px);
     text-decoration: none;
     transition: all 0.3s;
+    position: relative;
 }
 
 section.hot_sales a:hover {
-	-webkit-animation: fadeIn 0.5s ease-out forwards ;
+	border:2px solid #262223;
    	
 }
-
-@-webkit-keyframes fadeIn {
-    from {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);}
-    to {box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);}
-} 
 
 section.hot_sales figure {
     background-repeat: no-repeat;
@@ -203,11 +199,72 @@ section.hot_sales figure {
     height: 150px;
 }
 
+
 section.hot_sales a p {
 	display: block;
 	padding-top: 10px;
 	color:#262223;
 	text-transform: capitalize;
+}
+
+section.hot_sales a svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	border:1px solid #bdc3c7;
+	fill:#7f8c8d;
+	transition:all 0.3s;
+}
+
+section.hot_sales a:hover svg {
+	fill:white;
+}
+
+section.hot_sales a:hover svg.games {
+	background-color:#8e44ad;
+	border:none;
+}
+
+section.hot_sales a:hover svg.mouse {
+	background-color:#8e44ad;
+	border:none;
+}
+
+section.hot_sales a:hover svg.ps3 {
+	background-color:#2980b9;
+	border:none;
+}
+
+section.hot_sales a:hover svg.ps4 {
+	background-color:#2980b9;
+	border:none;
+}
+
+section.hot_sales a:hover svg.xboxone {
+	background-color:#27ae60;
+	border:none;
+}
+
+section.hot_sales a:hover svg.xbox360 {
+	background-color:#27ae60;
+	border:none;
+}
+
+section.hot_sales a:hover svg.apple {
+	background-color:#7f8c8d;
+	border:none;	
+}
+
+section.hot_sales a:hover svg.headphones {
+	background-color:#2c3e50;
+	border:none;	
+}
+
+section.hot_sales a:hover svg.memory {
+	background-color:#34495e;
+	border:none;	
 }
 
 section.hot_sales a span {
