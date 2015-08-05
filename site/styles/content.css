@@ -179,9 +179,7 @@ section.hot_sales a {
     vertical-align: top;
     text-align: center;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: calc(25% - 20px);
+    width:25%;
     text-decoration: none;
     transition: all 0.3s;
 }
