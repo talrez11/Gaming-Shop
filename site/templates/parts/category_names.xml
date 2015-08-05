@@ -8,7 +8,6 @@
 			/>	
 		</svg>
 		<cms:var param="description" multilanguage="yes"/>
-	
 	</a>
 	<!-- class="$params['text_id']" cms:eval="class" -->
 </document>
