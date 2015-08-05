@@ -84,7 +84,7 @@ nav#category a:hover svg.icon-date,nav#category a:hover svg.icon-headphones,nav#
 section.adds {
 	display: block;
 	text-align: right;
-	padding:0px calc((100vw - 1200px) / 2);
+	padding:30px calc((100vw - 1200px) / 2);
 }
 
 div.container {
