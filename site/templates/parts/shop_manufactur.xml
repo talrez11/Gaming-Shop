@@ -1,3 +1,11 @@
 <document>
-	<cms:var param="name" multilanguage="yes"/>
+	<svg class="$params['name'][$language]" cms:eval="class" >
+		<use
+			href="'#icon-'.$params['name'][$language]" 
+			xlink:href="'#icon-'.$params['name'][$language]"
+			cms:eval="href,xlink:href" 
+			/>
+	</svg>
 </document>
+
+

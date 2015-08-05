@@ -1,10 +1,18 @@
 <document>
 	<a 
 		href="javascript:void(0)"
+		data-id="$params['manufacturer']"
 		cms:eval="style,data-id"
 		>
 		<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
 		<p><cms:var param="name" multilanguage="yes"/></p>
 		<span><cms:var param="price"/></span>
+		<cms:module
+			name="shop"
+			action="show_manufacturer"
+			id="$params['manufacturer']"
+			template="parts/shop_manufactur.xml"
+			cms:eval="id"
+			/>	
 	</a>
 </document>
