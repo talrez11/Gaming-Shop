@@ -1,11 +1,10 @@
 <document>
 	<a 
 		href="javascript:void(0)"
-		style="'background-image: url('.$params['image'].');'" 
-		cms:eval="style"
+		cms:eval="style,data-id"
 		>
+		<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
 		<p><cms:var param="name" multilanguage="yes"/></p>
 		<span><cms:var param="price"/></span>
-		
 	</a>
 </document>
