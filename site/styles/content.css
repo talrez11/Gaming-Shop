@@ -115,6 +115,11 @@ div.btn_controls a {
     transition:all 0.3s;
 }
 
+div.btn_controls a:hover:before {
+	width: 10px;
+	background-color:#bdc3c7; 
+}
+
 div.btn_controls a.active {
 	color:#34495e;
 }
@@ -178,16 +183,10 @@ section.hot_sales a {
     vertical-align: top;
     text-align: center;
     margin-bottom: 10px;
-    border:2px solid white;
-    width:calc(25% - 4px);
+    width:25%;
     text-decoration: none;
     transition: all 0.3s;
     position: relative;
-}
-
-section.hot_sales a:hover {
-	border:2px solid #262223;
-   	
 }
 
 section.hot_sales figure {
