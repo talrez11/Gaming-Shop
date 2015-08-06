@@ -482,6 +482,15 @@ a.share:after {
     height: 0;
     width: 60px;
     z-index: -1;
+    transition:all 0.3s;
+}
+
+a.share:hover:after {
+	width: 95%;
+}
+
+a.share:hover {
+	color:white;
 }
 
 
@@ -506,7 +515,17 @@ a.print:after {
     height: 0;
     width: 60px;
     z-index: -1;
+    transition:all 0.3s;
 }
+
+a.print:hover:after {
+	width: 95%;
+}
+
+a.print:hover {
+	color:white;
+}
+
 
 
 a.buy {
@@ -530,6 +549,15 @@ a.buy:after {
     height: 0;
     width: 60px;
     z-index: -1;
+    transition:all 0.3s;
+}
+
+a.buy:hover:after {
+	width: 95%;
+}
+
+a.buy:hover {
+	color:white;
 }
 
 a.add_cart {
@@ -549,6 +577,15 @@ a.add_cart:after {
     height: 0;
     width: 60px;
     z-index: -1;
+    transition:all 0.3s;
+}
+
+a.add_cart:hover:after {
+	width: 95%;
+}
+
+a.add_cart:hover {
+	color:white;
 }
 
 div.product_gallery {

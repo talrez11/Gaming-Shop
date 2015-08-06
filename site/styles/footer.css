@@ -79,6 +79,8 @@ footer nav#category a {
 	vertical-align: middle;
 	padding-left: 0px;
 	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 	color:white;
 	font-family: 'Open Sans Hebrew Condensed', sans-serif;
 	border:none;
