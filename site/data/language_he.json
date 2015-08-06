@@ -12,5 +12,10 @@
     "address":"התעשייה 21 רעננה",
     "hours":" א-ה 10:00 - 19:00 • ו 0900 - 14:00  ",
     "phone":"03-9190808",
-    "placeholder_search":"חיפוש"
+    "placeholder_search":"חיפוש",
+    "price":"מחיר: ",
+    "share":"שיתוף",
+    "print":"הדפס מפרט",
+    "buy":"קנה עכשיו",
+    "add_to_cart":"הוסף לסל"
 }
