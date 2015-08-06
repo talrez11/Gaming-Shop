@@ -53,6 +53,7 @@ Site.on_load = function() {
 	advertise.attachControls($('div.btn_controls a'))
 	.setInterval(6000)
 	.setWrapAround(true);
+
 };
 
 
