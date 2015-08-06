@@ -2,6 +2,7 @@
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
 	<header>
+		<cms:svg file="../images/site-sprite.svg"/>
 		<!-- Top Header -->
 		<div class="top_header">
 			<a
