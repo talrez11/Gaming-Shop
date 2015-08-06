@@ -12,7 +12,15 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
 
-
+			<section class="category">
+				<cms:module
+					name="shop"
+					action="show_category"
+					id="$_REQUEST['id']"
+					template="parts/show_category.xml"
+					cms:eval="id"
+					/>				
+			</section>
 
 			<cms:template file="parts/footer.xml"/>
 
