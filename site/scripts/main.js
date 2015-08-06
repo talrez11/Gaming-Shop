@@ -54,6 +54,16 @@ Site.on_load = function() {
 	.setInterval(6000)
 	.setWrapAround(true);
 
+	// Function Displaying Product Big Image
+	function showImage() {
+		var item = $(this);
+		var myurl = item.data('image');
+		var bImage = $('div.gallery_wrap figure').css('backgroundImage','url(' + myurl + ')');
+	}
+
+	var images = $('div.gallery_wrap a');
+	images.on('click',showImage);	
+
 };
 
 
