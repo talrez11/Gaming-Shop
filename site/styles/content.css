@@ -171,8 +171,6 @@ div.btn_controls {
 
 div.btn_controls a {
     display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
     vertical-align: baseline;
     color: #bdc3c7;
@@ -182,6 +180,8 @@ div.btn_controls a {
     font-weight: bold;
     position: relative;
     transition:all 0.3s;
+    line-height: 100px;
+    min-height: 100px;
 }
 
 div.btn_controls a:hover:before {
@@ -383,45 +383,215 @@ section.category a:hover svg {
 	fill:white;
 }
 
-/* a:hover svg.games {
-	background-color:#8e44ad;
-}
-
- a:hover svg.mouse {
-	background-color:#8e44ad;
-}
-
- a:hover svg.ps3 {
-	background-color:#2980b9;
-}
-
- a:hover svg.ps4 {
-	background-color:#2980b9;
-}
-
- a:hover svg.xboxone {
-	background-color:#27ae60;
-}
-
- a:hover svg.xbox360 {
-	background-color:#27ae60;
-}
-
- a:hover svg.apple {
-	background-color:#7f8c8d;	
-}
-
- a:hover svg.headphones {
-	background-color:#2c3e50;	
-}
-
- a:hover svg.memory {
-	background-color:#34495e;
-}*/
-
 section.category a span {
 	display: block;
 	padding-bottom: 10px;
 	color:#e74c3c;
 }
+
+/*Product Page*/
+
+section.product {
+	display: block;
+	text-align: right;
+	padding:30px calc((100vw - 1200px) / 2);
+}
+
+article.information {
+	display: inline-block;
+	vertical-align: top;
+	width:50%;
+}
+
+article.information h3 {
+	display: block;
+	padding-bottom: 20px;
+	text-align: right;
+	text-transform: capitalize;
+	color:#262223;
+}
+
+article.information p {
+	display: block;
+	text-align: right;
+	color:#262223;
+}
+
+article.information span {
+	display: block;
+	text-align: right;
+	font-size: 1.5em;
+	color:#e74c3c;	
+
+}
+
+article.information strong {
+	display:block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: right;
+	font-size: 1.5em;
+	color:#e74c3c;
+}
+
+article.information a {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 250px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+article.information a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right:10px;
+	background-image: url(../images/inner-page-icons.svg);
+	background-position: 0px 0px;
+	background-size: 200px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+a.share {
+	color:#34495e;
+	border:1px solid #34495e;
+	background-color:white;
+}
+
+article.information a.share:before {
+	background-position: -150px 0px;	
+}
+
+a.share:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-bottom: 54px solid #34495e;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: -1;
+}
+
+
+a.print {
+	color:#34495e;
+	border:1px solid #34495e;
+	background-color:white;
+}
+
+article.information a.print:before {
+	background-position: -100px 0px;	
+}
+
+a.print:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-bottom: 54px solid #34495e;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: -1;
+}
+
+
+a.buy {
+	color:white;
+	border:1px solid #e64b3b;
+	background-color: #bf382a;
+}
+
+article.information a.buy:before {
+	background-position: -50px 0px;	
+}
+
+a.buy:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-bottom: 54px solid #e64b3b;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: -1;
+}
+
+a.add_cart {
+	color:white;
+	border:1px solid #f29b11;
+	background-color: #e57d21;
+}
+
+a.add_cart:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-bottom: 54px solid #f29b11;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: -1;
+}
+
+div.product_gallery {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 50%;
+}
+
+div.gallery_wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+}
+
+div.gallery_wrap figure {
+    display:block;
+    vertical-align: top;
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:auto 100%;
+    transition:all 0.5s;
+}
+
+
+div.gallery_wrap a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+    background-size: 100% auto;
+	border:1px solid #ecf0f1;	
+}
+
+
+
 
