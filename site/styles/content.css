@@ -50,32 +50,101 @@ nav#category a.date:hover,nav#category a.headphones:hover,nav#category a.memory:
 	color:white;	
 }
 
-nav#category a:hover svg,nav#category a:hover svg.icon-mouse {
+nav#category a:hover svg.games,nav#category a:hover svg.mouse {
 	background-color:#9b59b6;
 }
 
-nav#category a:hover svg.icon-ps3,nav#category a:hover svg.icon-ps4 {
+nav#category a:hover svg.ps3,nav#category a:hover svg.ps4 {
 	background-color:#3498db;
 }
 
-nav#category a:hover svg.icon-xbox360,nav#category a:hover svg.icon-xboxone {
+nav#category a:hover svg.xbox360,nav#category a:hover svg.xboxone {
 	background-color:#2ecc71;
 }
 
-nav#category a:hover svg.icon-apple {
+nav#category a:hover svg.apple {
 	background-color:#95a5a6;
 }
 
-nav#category a:hover svg.icon-hot {
+nav#category a:hover svg.hot {
 	background-color:#e74c3c;
 }
 
-nav#category a:hover svg.icon-chip {
+nav#category a:hover svg.chip {
 	background-color:#f1c40f;
 }
 
-nav#category a:hover svg.icon-date,nav#category a:hover svg.icon-headphones,nav#category a:hover svg.icon-memory {
+nav#category a:hover svg.date,nav#category a:hover svg.headphones,nav#category a:hover svg.memory {
 	background-color:#34495e;
+}
+
+/*Active Category Links*/
+
+nav#category a.games.active,nav#category a.mouse.active {
+	background-color:#8e44ad;
+	color:white;
+}
+
+nav#category a.ps3.active,nav#category a.ps4.active {
+	background-color:#2980b9;
+	color:white;	
+}
+
+nav#category a.xbox360.active,nav#category a.xboxone.active {
+	background-color:#27ae60;
+	color:white;	
+}
+
+nav#category a.apple.active {
+	background-color:#7f8c8d;
+	color:white;	
+}
+
+nav#category a.hot.active {
+	background-color:#c0392b;
+	color:white;	
+}
+
+nav#category a.chip.active {
+	background-color:#f39c12;
+	color:white;	
+}
+
+nav#category a.date.active,nav#category a.headphones.active,nav#category a.memory.active {
+	background-color:#2c3e50;
+	color:white;	
+}
+
+nav#category a.active svg.games,nav#category a.active svg.mouse {
+	background-color:#9b59b6;
+}
+
+nav#category a.active svg.ps3,nav#category a.active svg.ps4 {
+	background-color:#3498db;
+}
+
+nav#category a.active svg.xbox360,nav#category a.active svg.xboxone {
+	background-color:#2ecc71;
+}
+
+nav#category a.active svg.apple {
+	background-color:#95a5a6;
+}
+
+nav#category a.active svg.hot {
+	background-color:#e74c3c;
+}
+
+nav#category a.active svg.chip {
+	background-color:#f1c40f;
+}
+
+nav#category a.active svg.date,nav#category a.active svg.headphones,nav#category a.active svg.memory {
+	background-color:#34495e;
+}
+
+nav#category a.active svg use  {
+	fill:white;
 }
 
 
