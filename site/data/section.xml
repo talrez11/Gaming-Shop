@@ -29,7 +29,7 @@
 	<section name="shop">
 		<language name="all">
 			<action name="category" file="category.xml"/>
-			<action name="product" file="product-page.xml"/>
+			<action name="product" file="product.xml"/>
 			<action name="checkout" file="checkout.xml"/>
 		</language>
 	</section>								
