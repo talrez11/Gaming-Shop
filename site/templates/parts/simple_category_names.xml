@@ -1,5 +1,9 @@
 <document>
-	<a href="javascript:void(0)">
+		<a href="url_Make('category','shop',array('name',$params['text_id']),array('id',$params['id']))"
+		class="(isset($_REQUEST['category']) ? $_REQUEST['category'] : $_REQUEST['name']) == $params['text_id'] ? 'active ' .$params['text_id'] : $params['text_id']" 
+		cms:eval="href"
+		 cms:optional="class" 
+	 	>
 
 		<cms:var param="description" multilanguage="yes"/>
 	</a>
