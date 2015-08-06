@@ -1,6 +1,10 @@
 <document>
-	<a href="#" class="$params['text_id']" cms:eval="class" >
-		<svg class="'icon-'.$params['text_id']" cms:eval="class" >
+	<a href="url_Make('category','shop',array('id',$params['text_id']))"
+		class="(isset($_REQUEST['category']) ? $_REQUEST['category'] : $_REQUEST['id']) == $params['text_id'] ? 'active ' .$params['text_id'] : $params['text_id']" 
+		cms:eval="href"
+		 cms:optional="class" 
+	 	>
+		<svg class="$params['text_id']" cms:eval="class" >
 			<use 
 				href="'#icon-'.$params['text_id']" 
 				xlink:href="'#icon-'.$params['text_id']" 
