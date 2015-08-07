@@ -7,7 +7,7 @@
 		<svg class="$params['text_id']" cms:eval="class" >
 			<use 
 				href="'#icon-'.$params['text_id']" 
-				xlink:href="'#icon-'.$params['text_id']" 
+				xlink:href="'site/images/site-sprite.svg#icon-'.$params['text_id']" 
 				cms:eval="href,xlink:href"
 			/>	
 		</svg>
