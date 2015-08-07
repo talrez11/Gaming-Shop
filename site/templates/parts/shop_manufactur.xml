@@ -2,7 +2,7 @@
 	<svg class="$params['name'][$language]" cms:eval="class" >
 		<use
 			href="'#icon-'.$params['name'][$language]" 
-			xlink:href="'#icon-'.$params['name'][$language]"
+			xlink:href="'site/images/site-sprite.svg#icon-'.$params['name'][$language]"
 			cms:eval="href,xlink:href" 
 			/>
 	</svg>
