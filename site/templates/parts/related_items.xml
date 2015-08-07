@@ -1,0 +1,18 @@
+<document>
+	<a 
+		href="url_Make('product','shop',array('category',$_REQUEST['name']),array('id',$params['id']))"
+		data-id="$params['manufacturer']"
+		cms:eval="style,href"
+		>
+		<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
+		<p><cms:var param="name" multilanguage="yes"/></p>
+		<span><cms:var param="price"/></span>
+		<cms:module
+			name="shop"
+			action="show_manufacturer"
+			id="$params['manufacturer']"
+			template="parts/shop_manufactur.xml"
+			cms:eval="id"
+			/>	
+	</a>
+</document>
