@@ -1,5 +1,5 @@
 <document>
-	<div class="product_gallery" >
+	<div class="product_gallery" data-id="$params['uid']" cms:eval="data-id">
 		<div class="gallery_wrap">
 
 			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
@@ -23,6 +23,17 @@
 		<a href="javascript:void(0)" class="buy"><cms:text constant="buy"/></a>
 		<a href="javascript:void(0)" class="add_cart"><cms:text constant="add_to_cart"/></a>
 	</article>
+
+	<section class="related_items">
+		<cms:module
+			name="shop"
+			action="show_item_list"
+			category="$_REQUEST['category']"
+			related="$params['id']"
+			template="parts/related_items.xml"
+			cms:eval="related,category"
+			/>
+	</section>
 
 
 
