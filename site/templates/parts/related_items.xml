@@ -1,6 +1,6 @@
 <document>
 	<a 
-		href="url_Make('product','shop',array('category',$_REQUEST['name']),array('id',$params['id']))"
+		href="url_Make('product','shop',array('category',$_REQUEST['category']),array('id',$params['id']))"
 		data-id="$params['manufacturer']"
 		cms:eval="style,href"
 		>
