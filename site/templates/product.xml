@@ -19,7 +19,7 @@
 						template="parts/product_details.xml"
 						cms:eval="id"
 						/>
-				</section>			
+				</section>		
 			<cms:template file="parts/footer.xml"/>
 
 		</body>
