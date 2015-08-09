@@ -27,6 +27,7 @@
 	</div>
 
 	<section class="related_items">
+		<h2><cms:text constant="related_section_title"/><cms:raw text=" - "/><cms:var param="name" multilanguage="yes"/></h2>
 		<cms:module
 			name="shop"
 			action="show_item_list"
