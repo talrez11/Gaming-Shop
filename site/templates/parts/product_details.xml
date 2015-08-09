@@ -1,28 +1,30 @@
 <document>
-	<div class="product_gallery" data-id="$params['uid']" cms:eval="data-id">
-		<div class="gallery_wrap">
+	<div class="product_wrap">
+		<div class="product_gallery" data-id="$params['uid']" cms:eval="data-id">
+			<div class="gallery_wrap">
 
-			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
+				<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
 
-			<cms:module
-				name="gallery"
-				action="show_image_list"
-				group_id="$params['gallery']"
-				template="parts/product_image.xml"
-				cms:eval="group_id"
-				/>
-		</div>	
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group_id="$params['gallery']"
+					template="parts/product_image.xml"
+					cms:eval="group_id"
+					/>
+			</div>	
+		</div>
+
+		<article class="information">
+			<h3><cms:var param="name" multilanguage="yes"/></h3>
+			<cms:markdown param="description" multilanguage="yes"/>
+			<strong><cms:text constant="price"/> <cms:var param="price"/></strong>
+			<a href="javascript:void(0)" class="share"><cms:text constant="share"/></a>
+			<a href="javascript:void(0)" class="print"><cms:text constant="print"/></a>
+			<a href="javascript:void(0)" class="buy"><cms:text constant="buy"/></a>
+			<a href="javascript:void(0)" class="add_cart"><cms:text constant="add_to_cart"/></a>
+		</article>
 	</div>
-
-	<article class="information">
-		<h3><cms:var param="name" multilanguage="yes"/></h3>
-		<cms:markdown param="description" multilanguage="yes"/>
-		<strong><cms:text constant="price"/> <cms:var param="price"/></strong>
-		<a href="javascript:void(0)" class="share"><cms:text constant="share"/></a>
-		<a href="javascript:void(0)" class="print"><cms:text constant="print"/></a>
-		<a href="javascript:void(0)" class="buy"><cms:text constant="buy"/></a>
-		<a href="javascript:void(0)" class="add_cart"><cms:text constant="add_to_cart"/></a>
-	</article>
 
 	<section class="related_items">
 		<cms:module
