@@ -202,38 +202,39 @@ div#popup {
 	vertical-align: middle;
 	text-align: center;
 	width: 10%;
+	position: relative;
 
 }
 
-div#popup div.wrap {
+div#popup a.wrap {
 	display: block;
 	text-align: right;
 }
 
-div#popup div.wrap span {
+div#popup a.wrap span {
 	display:inline-block;
 	vertical-align: middle;
 	color:#7f8c8d;
 	transition:all 0.3s;
 }
 
-div#popup div.wrap svg {
+div#popup a.wrap svg {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
 	height: 40px;
 }
 
-div#popup div.wrap svg use {
+div#popup a.wrap svg use {
 	fill:#7f8c8d;
 	transition:all 0.3s;
 }
 
-div#popup div.wrap:hover svg use {
+div#popup a.wrap:hover svg use {
 	fill:#e74c3c;
 }
 
-div#popup div.wrap:hover span {
+div#popup a.wrap:hover span {
 	color:#e74c3c;
 }
 
@@ -250,6 +251,29 @@ div#popup p:last-of-type {
 	color:#7f8c8d;
 	width: 50%;
 }
+
+/*shop cart*/
+
+div#popup ul  {
+	visibility:hidden;
+	position: absolute;
+	margin: 0px;
+	list-style: none;
+	top:calc(100% + 10px);
+	left: 0px;
+	height: 200px;
+	width: 300px;
+	background-color: black;
+	z-index: 1000;
+	opacity: 0;
+	transition:all 0.3s;
+}
+
+div#popup ul.open {
+	visibility: visible;
+	opacity: 1;
+}
+
 
 /*category Navigation*/
 
