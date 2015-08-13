@@ -230,15 +230,21 @@ div.link_images_container a {
 	left: 0px;
 	width: 100%;
 	height:100%;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
 	opacity:0;
+	visibility: hidden;
 	transition:all 0.3s;
+	overflow: hidden;
+}
+
+div.link_images_container a img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 div.link_images_container a.visible {
 	opacity: 1;
+	visibility: visible;
 }
 
 section.hot_sales {
