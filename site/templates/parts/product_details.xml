@@ -1,6 +1,6 @@
 <document>
-	<div class="product_wrap">
-		<div class="product_gallery" data-id="$params['uid']" cms:eval="data-id">
+	<div class="product_wrap" data-id="$params['uid']" cms:eval="data-id">
+		<div class="product_gallery">
 			<div class="gallery_wrap">
 
 				<figure>
@@ -39,6 +39,4 @@
 			cms:eval="related,category"
 			/>
 	</section>	
-
-
 </document>

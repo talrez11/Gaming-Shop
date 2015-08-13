@@ -1,4 +1,5 @@
 <document>
-	<a href="$params['url']" style="'background-image: url('.$params['image'].');'" cms:eval="style,href" >	
+	<a href="$params['url']" cms:eval="href">
+		<img src="$params['image']" alt="" cms:eval="src"/>	
 	</a>
 </document>
