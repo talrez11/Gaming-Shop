@@ -3,7 +3,9 @@
 		<div class="product_gallery" data-id="$params['uid']" cms:eval="data-id">
 			<div class="gallery_wrap">
 
-				<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
+				<figure>
+					<img src="$params['image']" alt="" cms:eval="src"/>
+				</figure>
 
 				<cms:module
 					name="gallery"
