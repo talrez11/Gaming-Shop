@@ -150,6 +150,7 @@ Site.on_load = function() {
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
 			.ui.add_item_list($('div#popup ul'))
+			.ui.connect_checkout_button($('a.buy'))
 			.add_item_view(Site.ItemView);
 
 	advertise = new PageControl('div.link_images_container','a')
