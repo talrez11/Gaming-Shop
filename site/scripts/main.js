@@ -58,11 +58,19 @@ Site.on_load = function() {
 	function showImage() {
 		var item = $(this);
 		var myurl = item.data('image');
-		var bImage = $('div.gallery_wrap figure').css('backgroundImage','url(' + myurl + ')');
+		var bImage = $('div.gallery_wrap figure img').attr('src',myurl);
 	}
 
 	var images = $('div.gallery_wrap a');
-	images.on('click',showImage);	
+	images.on('click',showImage);
+
+	//Function displaying shop cart
+
+	var cart_btn = $('div#popup a.wrap');
+	var cart = $('div#popup ul');
+	cart_btn.on('click',function(){
+		cart.toggleClass('open');
+	});	
 
 };
 
