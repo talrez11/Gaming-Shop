@@ -75,8 +75,8 @@ Site.ItemView = function(item) {
 		self.option_remove = $('<a>').appendTo(self.container);
 		self.option_remove
 				.attr('href', 'javascript: void(0);')
-				.on('click', self._handle_remove)
-				.html(language_handler.getText('shop', 'remove'));
+				.on('click', self._handle_remove);
+				
 
 		self.figure = $('<figure>').appendTo(self.container);
 		self.image = $('<img>').appendTo(self.figure);
