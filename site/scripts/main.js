@@ -76,16 +76,25 @@ Site.ItemView = function(item) {
 		self.option_remove
 				.attr('href', 'javascript: void(0);')
 				.on('click', self._handle_remove);
+
+		self.option_remove.svg = $('<img>').appendTo(self.option_remove);	
+		self.option_remove.svg
+							  .attr('src','site/images/x.svg');
+							  
+
 				
 
 		self.figure = $('<figure>').appendTo(self.container);
 		self.image = $('<img>').appendTo(self.figure);
+
 		self.label_total = $('<span>').appendTo(self.container);
 		self.label_total
 				.addClass('total')
 				.attr('data-currency', self.currency);
+
 		self.label_count = $('<span>').appendTo(self.container);
 		self.label_count.addClass('count');
+
 		self.label_name = $('<span>').appendTo(self.container);
 		self.label_name.addClass('name');
 		// create options
@@ -110,9 +119,9 @@ Site.ItemView = function(item) {
 				.attr('src', self.item.image)
 				.attr('alt', self.item.name[language_handler.current_language])
 		self.label_name.text(self.item.name[language_handler.current_language]);
-		self.label_count.text(self.item.count);
+		self.label_count.text( self.item.count + " " + language_handler.getText(null, 'unit'));
 		self.label_total
-				.text((self.item.count * self.item.price * self.exchange_rate).toFixed(2))
+				.text((self.item.count * self.item.price * self.exchange_rate + " " + language_handler.getText(null, 'price1')))
 				.attr('data-currency', self.currency);
 	};
 
