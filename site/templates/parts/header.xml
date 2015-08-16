@@ -145,12 +145,11 @@
 								/>	
 					</svg>
 					
-					<span>
-						<cms:text constant="cart"/>
-					</span>
-
+					<cms:text constant="cart"/>
 				</a>
 				<cms:template file="parts/cart_template.xml"/>
+
+				<span class="total_count"></span>
 			</div>
 
 		</div>

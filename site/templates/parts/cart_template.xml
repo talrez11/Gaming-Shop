@@ -1,5 +1,6 @@
 <document>
 	<div class="cart">
+
 		<ul>
 			<li>
 				<strong><cms:text constant="cart_remove_param"/></strong>
@@ -9,11 +10,13 @@
 				<strong><cms:text constant="cart_name_param"/></strong>
 			</li>
 		</ul>
+		
 		<a href="javascript:void(0)" class="close"><cms:text constant="close"/></a>
 		<a href="javascript:void(0)" class="checkout"><cms:text constant="buy"/></a>
 		<strong><cms:text constant="total"/></strong>
 		<p class="total_price"></p>
 		<strong><cms:text constant="quantity_sum"/></strong>
 		<p class="total_quantity"></p>
+
 	</div>
 </document>
