@@ -178,9 +178,32 @@ Site.on_load = function() {
 
 	/*Function inserting item to cart*/
 	function insertToCart() {
+		
 		var uid = $('div.product_wrap').data('id');
-		Site.cart.add_item_by_uid(uid);
-		cart.addClass('open');
+		var list = Site.cart.get_item_list_by_uid(uid);
+
+		var item_list = Site.cart.get_item_list_by_uid(uid);
+		var found_item = null;
+
+		for (var i=0, count=item_list.length; i<count; i++) {
+			var item = item_list[i];
+
+			if (item.uid) {
+				found_item = item;
+				break;
+			}
+		}
+
+			if (found_item == null) {
+				// add new item
+				Site.cart.add_item_by_uid(uid);
+				$('div#popup ul').addClass('open');
+
+			} else {
+				// increase count
+				found_item.alter_count(1);
+				$('div#popup ul').addClass('open');
+			}
 	}
 
 	var btn_add_cart = $('a.add_cart');
