@@ -206,7 +206,7 @@ div#popup {
 
 }
 
-div#popup a.wrap {
+div#popup > a.wrap {
     display: block;
     text-align: center;
     padding-left: 10px;
@@ -215,82 +215,128 @@ div#popup a.wrap {
     transition:all 0.2s;
 }
 
-div#popup a.wrap:hover {
+div#popup > a.wrap:hover {
 	background-color:#e64b3b; 
 }
 
-div#popup a.wrap:active {
+div#popup > a.wrap:active {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);	
 }
 
-div#popup a.wrap span {
+div#popup > a.wrap span {
 	display:inline-block;
 	vertical-align: middle;
 	color:white;
 	transition:all 0.3s;
 }
 
-div#popup a.wrap svg {
+div#popup > a.wrap svg {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
 	height: 40px;
 }
 
-div#popup a.wrap svg use {
+div#popup > a.wrap svg use {
 	fill:white;
 	transition:all 0.3s;
 }
 
-div#popup p:first-of-type {
-	display: inline-block;
-	vertical-align: middle;
-	color:#7f8c8d;
-	width: 50%;
-}
-
-div#popup p:last-of-type {
-	display: inline-block;
-	vertical-align: middle;
-	color:#7f8c8d;
-	width: 50%;
-}
 
 /*shop cart*/
 
-div#popup ul  {
+div#popup div.cart {
+
 	position: absolute;
 	display: block;
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-	list-style-image: none;
-	top:calc(100% + 10px);
+	text-align: right;
+	top:calc(100% + 11px);
 	left: 0px;
-	width: 600px;
+    padding-top: 5px;
+    padding-bottom: 5px;	
 	background-color:white;
 	border:1px solid #e74c3c;
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 	z-index: 1000;
 	opacity: 0;
 	visibility:hidden;
-	transition:all 0.3s;
+	transition:all 0.3s;	
+	width: 600px;
 }
 
-div#popup ul li {
+div#popup div.cart > a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color:black;
+    text-decoration: none;
+    width: 100px;
+    color: white;
+    transition:all 0.3s;
+    position: relative;
+}
+
+div#popup div.cart > a.close:hover {
+    background-color: rgba(0, 0, 0, 0.59); 
+}
+
+div#popup div.cart > a.checkout {
+	background-color:#bf382a;
+	transition:all 0.3s; 
+}
+
+div#popup div.cart > a.checkout:hover {
+	background-color: #e64b3b;
+}
+
+div#popup div.cart > strong {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+	color:black;
+}
+
+div#popup div.cart > p {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;	
+	color:#7f8c8d;
+}
+
+div#popup div.cart ul  {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+div#popup div.cart ul li {
     display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border-bottom: 1px dashed #7f8c8d;
+    transition:all 0.3s;    
 }
 
-div#popup ul li strong {
+div#popup div.cart ul li:first-of-type {
+	border-bottom: none;
+}
+
+div#popup div.cart ul li strong {
     display: inline-block;
     text-align: center;
     color: black;
     width: 20%;
 }    
 
-div#popup ul figure {
+div#popup div.cart ul figure {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0px;
@@ -299,7 +345,7 @@ div#popup ul figure {
 	overflow: hidden;
 }
 
-div#popup ul figure img {
+div#popup div.cart ul figure img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -307,7 +353,7 @@ div#popup ul figure img {
     height: 100%;
 }
 
-div#popup ul span {
+div#popup div.cart ul span {
 	display: inline-block;
 	vertical-align: middle;
 	color:#7f8c8d;
@@ -316,25 +362,25 @@ div#popup ul span {
 
 }
 
-div#popup ul span.name {
+div#popup div.cart ul span.name {
 	font-weight: bold;
 }
 
-div#popup ul a {
+div#popup div.cart ul a {
 	display: inline-block;
 	vertical-align: middle;
 	color:#7f8c8d;
 	width: calc(20% - 2px);		
 }
 
-div#popup ul a img {
+div#popup div.cart ul a img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20px;
+	width: 15px;
 }
 
-div#popup ul.open {
+div#popup div.cart.open {
 	visibility: visible;
 	opacity: 1;
 }
