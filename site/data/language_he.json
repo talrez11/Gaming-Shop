@@ -24,5 +24,8 @@
     "cart_quantity_param":"כמות",
     "cart_price_param":"מחיר",
     "cart_image_param":"תמונה",
-    "cart_remove_param":"הסר מוצר"
+    "cart_remove_param":"הסר מוצר",
+    "close":"סגור סל",
+    "total":"מחיר סופי :",
+    "quantity_sum":"כמות סופית :"
 }
