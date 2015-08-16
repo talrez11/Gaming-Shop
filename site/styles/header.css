@@ -327,6 +327,13 @@ div#popup ul a {
 	width: calc(20% - 2px);		
 }
 
+div#popup ul a img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20px;
+}
+
 div#popup ul.open {
 	visibility: visible;
 	opacity: 1;
