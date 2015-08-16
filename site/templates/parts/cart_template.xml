@@ -1,5 +1,11 @@
 <document>
 	<ul>
-		
+		<li>
+			<strong>הסר מוצר</strong>
+			<strong>תמונה</strong>
+			<strong>מחיר</strong>
+			<strong>כמות</strong>
+			<strong>שם מוצר</strong>
+		</li>
 	</ul>
 </document>
