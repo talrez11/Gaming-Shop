@@ -270,6 +270,7 @@ div#popup ul  {
 	width: 600px;
 	background-color:white;
 	border:1px solid #e74c3c;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 	z-index: 1000;
 	opacity: 0;
 	visibility:hidden;
@@ -277,8 +278,17 @@ div#popup ul  {
 }
 
 div#popup ul li {
-	display: block;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+div#popup ul li strong {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    width: 20%;
+}    
 
 div#popup ul figure {
 	display: inline-block;
