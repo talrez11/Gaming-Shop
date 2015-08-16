@@ -203,8 +203,21 @@ div#popup {
 	text-align: center;
 	width: 10%;
 	position: relative;
-
 }
+
+div#popup > span.total_count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background-color: #34495E;
+    border-radius: 50%;
+    line-height: 25px;
+    font-size: 0.8em;
+    transition:all 0.3s;
+}
+
 
 div#popup > a.wrap {
     display: block;
@@ -212,6 +225,8 @@ div#popup > a.wrap {
     padding-left: 10px;
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
     background-color: #bf382a;
+    text-decoration: none;
+    color:white;
     transition:all 0.2s;
 }
 
@@ -221,13 +236,6 @@ div#popup > a.wrap:hover {
 
 div#popup > a.wrap:active {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);	
-}
-
-div#popup > a.wrap span {
-	display:inline-block;
-	vertical-align: middle;
-	color:white;
-	transition:all 0.3s;
 }
 
 div#popup > a.wrap svg {
