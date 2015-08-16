@@ -8,7 +8,8 @@
     "menu_information":"מידע מקצועי",
     "cart":"סל קניות",
     "items":"פריטים",
-    "price":"שח",
+    "price1":"שח",
+    "unit":"יח",
     "address":"התעשייה 21 רעננה",
     "hours":" א-ה 10:00 - 19:00 • ו 0900 - 14:00  ",
     "phone":"03-9190808",
@@ -18,5 +19,10 @@
     "print":"הדפס מפרט",
     "buy":"קנה עכשיו",
     "add_to_cart":"הוסף לסל",
-    "related_section_title":"חבילות מומלצות עבור"
+    "related_section_title":"חבילות מומלצות עבור",
+    "cart_name_param":"שם המוצר",
+    "cart_quantity_param":"כמות",
+    "cart_price_param":"מחיר",
+    "cart_image_param":"תמונה",
+    "cart_remove_param":"הסר מוצר"
 }
