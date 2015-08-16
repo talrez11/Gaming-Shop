@@ -121,7 +121,7 @@ Site.ItemView = function(item) {
 		self.label_name.text(self.item.name[language_handler.current_language]);
 
 		self.label_count.text( self.item.count + " " + language_handler.getText(null, 'unit'));
-		
+
 		self.label_total
 				.text((self.item.count * self.item.price * self.exchange_rate + " " + language_handler.getText(null, 'price1')))
 				.attr('data-currency', self.currency);
@@ -164,8 +164,9 @@ Site.on_load = function() {
 			.ui.connect_checkout_button($('a.buy'))
 			.ui.add_total_cost_label($('div.cart p.total_price'))
 			.ui.add_total_count_label($('div.cart p.total_quantity'))
-
+			.ui.add_total_count_label($('div#popup > span.total_count'))
 			.add_item_view(Site.ItemView);
+	
 
 	advertise = new PageControl('div.link_images_container','a')
 	advertise.attachControls($('div.btn_controls a'))
