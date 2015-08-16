@@ -150,8 +150,6 @@
 					</span>
 
 				</a>
-				<p class="items"><cms:text constant="items"/></p>
-				<p class="price"><cms:text constant="price"/></p>
 				<cms:template file="parts/cart_template.xml"/>
 			</div>
 
