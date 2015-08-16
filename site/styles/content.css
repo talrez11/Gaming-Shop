@@ -288,6 +288,7 @@ section.hot_sales a svg {
 	width: 50px;
 	height: 50px;
 	border:1px solid #bdc3c7;
+	background-color: white;
 	fill:#7f8c8d;
 	transition:all 0.3s;
 }
