@@ -1,6 +1,7 @@
 <document>
 	<a 
-		href="javascript:void(0)" style="'background-image: url('.$params['image'].');'"
+		href="javascript:void(0)" 
+		style="'background-image: url('.gallery::getThumbnailById($params['id'],null, 100, Thumbnail::CONSTRAIN_BOTH).');'"
 		data-image="$params['image']" 
 		cms:eval="style,data-image"
 		>

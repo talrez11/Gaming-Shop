@@ -2,10 +2,14 @@
 	<cms:if condition="$section == 'home'">
 		<a 
 			href="url_Make('product','shop',array('category','hot'),array('id',$params['id']))"
-			data-id="$params['manufacturer']"
-			cms:eval="style,href"
+			cms:eval="href"
 			>
-			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
+			<figure 
+				style="'background-image: url('.$params['image'].');'" 
+				cms:eval="style"
+				>
+				
+			</figure>
 			<p><cms:var param="name" multilanguage="yes"/></p>
 			<span><cms:var param="price"/></span>
 			<cms:module
@@ -22,8 +26,7 @@
 	<cms:if condition="$section != 'home'">
 		<a 
 			href="url_Make('product','shop',array('category',$_REQUEST['name']),array('id',$params['id']))"
-			data-id="$params['manufacturer']"
-			cms:eval="style,href"
+			cms:eval="href"
 			>
 			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
 			<p><cms:var param="name" multilanguage="yes"/></p>
