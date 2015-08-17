@@ -4,7 +4,13 @@
 			<div class="gallery_wrap">
 
 				<figure>
-					<img src="$params['image']" alt="" cms:eval="src"/>
+					<cms:module
+						name="gallery"
+						action="show_image"
+						group_id="$params['gallery']"
+						template="parts/product_main_image.xml"
+						cms:eval="group_id"
+						/>
 				</figure>
 
 				<cms:module

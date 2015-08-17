@@ -1,0 +1,3 @@
+<document>
+	<img src="gallery::getThumbnailById($params['id'], null, 400, Thumbnail::CONSTRAIN_BOTH)" alt="" cms:eval="src"/>
+</document>
