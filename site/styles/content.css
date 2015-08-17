@@ -617,7 +617,9 @@ div.gallery_wrap figure {
     display:block;
     vertical-align: top;
     margin: 0px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
     height: 400px;
     transition:all 0.5s;
     overflow:hidden;
