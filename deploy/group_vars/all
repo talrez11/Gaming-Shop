@@ -1,12 +1,12 @@
 ---
 site:
-  domain: sample.com
-  # subdomain: test
+  domain: way2cu.com
+  subdomain: game-shop
   make_alias: false
-  root: httpdocs
-  username: "sample"
+  root: game-shop
+  username: "game_shop"
   caracal_branch: develop
-  # ip_address: 0.0.0.0
+  ip_address: 216.250.115.199
   # owner: Some Person
   # plan: Unlimited
 
