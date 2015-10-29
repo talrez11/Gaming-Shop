@@ -158,6 +158,7 @@ Site.ItemView = function(item) {
  */
 Site.on_load = function() {
 
+
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
 			.ui.add_item_list($('div#popup div.cart ul'))
@@ -230,6 +231,10 @@ Site.on_load = function() {
 
 	var btn_add_cart = $('a.add_cart');
 	btn_add_cart.on('click',insertToCart);
+
+	if (Site.is_mobile())
+		Site.mobile_menu = new Caracal.MobileMenu();
+
 };
 
 
