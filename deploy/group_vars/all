@@ -1,7 +1,7 @@
 ---
 site:
   domain: way2cu.com
-  subdomain: game-shop
+  subdomain: game
   make_alias: false
   root: game-shop
   username: "twigy"
