@@ -4,7 +4,7 @@ site:
   subdomain: game-shop
   make_alias: false
   root: game-shop
-  username: "game_shop"
+  username: "way2cu.com"
   caracal_branch: develop
   ip_address: 216.250.115.199
   # owner: Some Person
