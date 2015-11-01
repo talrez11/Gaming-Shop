@@ -4,7 +4,7 @@ site:
   subdomain: game-shop
   make_alias: false
   root: game-shop
-  username: "twigi"
+  username: "twigy"
   caracal_branch: develop
   ip_address: 216.250.115.199
   # owner: Some Person
